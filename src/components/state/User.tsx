@@ -5,7 +5,7 @@ type AuthUser = {
     email: string
 }
 
-export function User() {
+export function User({name, email}: AuthUser) {
     //"useState<AuthUser | null>(null)" this infers types so you can have the initial state set to null prior to a value being set. Now the initial value is null and the AuthUser values can be used in the setUser function.
     const [user, setUser] = useState<AuthUser | null>(null)
 
@@ -13,7 +13,7 @@ export function User() {
     //eg.
     //const [user, setUser] = useState<AuthUser>({} as AuthUser)
 
-    const handleLogin = () => { setUser({ name:'Emily', email:'elb@funtimes.com'}) }
+    const handleLogin = () => { setUser({ name:name, email:email}) }
     const handleLogout = () => { setUser(null) } 
 
     return (

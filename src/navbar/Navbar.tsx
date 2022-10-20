@@ -71,6 +71,18 @@ function Navbar() {
                   Style Props
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  to="/state"
+                  className={
+                    window.location.pathname === "/state"
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                >
+                  State
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

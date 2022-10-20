@@ -6,6 +6,7 @@ import TypingProps from "./pages/TypingProps";
 import AdvancedProps from "./pages/AdvancedProps";
 import EventProps from "./pages/EventProps";
 import StyleProps from './pages/StyleProps'
+import State from "./pages/State";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/advancedprops" element={<AdvancedProps />} />
           <Route path="/eventprops" element={<EventProps/>} />
           <Route path="/styleprops" element={<StyleProps/>} />
+          <Route path="/state" element={<State/>} />
         </Routes>
       </BrowserRouter>
     </div>
