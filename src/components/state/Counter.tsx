@@ -1,9 +1,9 @@
 import { useReducer } from 'react'
-
+//create a type for state obj
 type CounterState = {
     count: number
 }
-
+//create a type for action obj
 type CounterAction = {
     type: string
     payload: number
