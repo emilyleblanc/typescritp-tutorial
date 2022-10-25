@@ -6,6 +6,22 @@
 npx create-react-app ("projectName" or "." if you want to create it within an existing folder) --template typescript
 ```
 
+## Typescirpt Types 
+  - Boolean 
+  - Number
+  - String
+  - Object
+  - Array
+  - Turple
+  - Enum
+  - Any
+  - Union
+  - Literal
+  - Function
+  - Unknown
+  - Never
+  - Custom
+  
 ## Typing props
 
 When using props we have to initialize what type of value the prop holds:
